@@ -12,6 +12,14 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/lesson1', function(req, res){
+  res.sendFile(__dirname + '/lesson1.html');
+});
+
+app.get('/toc', function(req, res){
+  res.sendFile(__dirname + '/toc.html');
+});
+
 app.listen(3012, function(req, res){
   console.log("Server running on port 3012");
 })

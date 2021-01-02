@@ -11,3 +11,15 @@
   text-decoration: none;
   font-size: 17px;
 }
+
+body {
+  margin-left: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}

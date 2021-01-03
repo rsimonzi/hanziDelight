@@ -1,0 +1,32 @@
+body {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #898791;
+  border-radius: 10px;
+  color: #898791;
+}
+
+h4 {
+  text-align: right;
+  margin-right: 20px;
+}
+
+table, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #898791;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+}
+
+h3, h1 {
+  text-align: center;
+}
+p {
+  padding-left: 20px;
+}
+
+.list {
+  text-align: center;
+}

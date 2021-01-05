@@ -8,6 +8,15 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {useNewUrlParser: true});
+
+const articlesSchema = {
+  title: String,
+  content: String
+}
+
+const Article = mongoose.model("Article", articlesSchema);
+
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });

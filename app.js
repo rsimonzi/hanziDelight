@@ -7,6 +7,7 @@ const path = require('path');
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs');
 
 mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {useNewUrlParser: true});
 
@@ -18,15 +19,15 @@ const articlesSchema = {
 const Article = mongoose.model("Article", articlesSchema);
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.render('index');
 });
 
 app.get('/lesson1', function(req, res){
-  res.sendFile(__dirname + '/lesson1.html');
+  res.render('lesson1');
 });
 
 app.get('/toc', function(req, res){
-  res.sendFile(__dirname + '/toc.html');
+  res.render('toc');
 });
 
 app.listen(3012, function(req, res){

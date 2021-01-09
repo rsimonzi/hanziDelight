@@ -30,6 +30,10 @@ app.get('/toc', function(req, res){
   res.render('toc');
 });
 
+app.get('/signin', function(req, res){
+  res.render('signin');
+});
+
 app.get('/about', function(req, res){
   res.render('about');
 });

@@ -13,11 +13,9 @@ h4 {
 }
 
 table, th, td {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #898791;
+  border-style: none;
   border-collapse: collapse;
-  text-align: center;
+  text-align: left;
   margin: auto;
 }
 

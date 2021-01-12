@@ -21,27 +21,73 @@ const articlesSchema = {
 
 const Article = mongoose.model("Article", articlesSchema);
 
-var lessonObject = {
+let lessonObject = [{
   id: 1,
+  pageNumber: '第一页 | dìyīyè | Page 1',
   chapter: "第一章 | dìyīzhāng | Chapter 1",
   lesson: "第一课 | dìyīkè | Lesson 1",
-  charList: ['食', '読', '学', '視', '観', '見', '行', '来', '会', '買'],
-  speakers: [],
-  sentences: ['食べる', "読む", '学ぶ', '視る', '観る', '見る', '行く', '来る', 'する', '会う', '買う'],
+  charList: ['你', '好', '李', '王', '太',
+   '先', '生', '是', '北', '京',
+    '东', '去', '在', '吗', '我'],
+  speakers: ['李太太', '王先生', '李太太', '王先生', '李太太',
+  '王先生', '李太太', '王先生'],
+  sentences: [
+    '你好!', "你好!", '我是李太太。', '我是王太太。', '你好王先生。',
+    '你好李太太。', '你去北京吗。', '我去北京。 我在东京。'],
   translatedSentences: [
-  'I/We/He, she/They eat',
-  'I/We/He, she/They read',
-  'I/We/He, she/They learn',
-  'I/We/He, she/They see',
-  'I/We/He, she/They see',
-  'I/We/He, she/They see',
-  'I/We/He, she/They go',
-  'I/We/He, she/They go',
-  'I/We/He, she/They do',
-  'I/We/He, she/They meet',
-  'I/We/He, she/They buy'
-]
-};
+  'Hello!',
+  'Hello!',
+  'I am Mrs. Li.',
+  'I am Mrs. Wang.',
+  'Hello Mrs. Wang.',
+  'Hello Mrs. Li.',
+  'Are you going to Beijing?',
+  'I am going to Beijing. I am in Tokyo.'
+  ],
+  grammarPoints: [
+'',
+'',
+'',
+'',
+''
+  ]},
+{
+  id: 2,
+  pageNumber: '二 | 弐 | 2',
+  chapter: "第一章 | だいいっしょう| Chapter 1",
+  lesson: "第二課 |　だい二か | Lesson 2",
+  charList: ['出', '時', '山', '本', '外'],
+  speakers: ['ブラウン', 'スミス', 'ブラウン', 'スミス',
+   'ブラウン', 'スミス', 'ブラウン', 'スミス',
+   'ブラウン', 'スミス','スミス', 'ブラウン', 'スミス'],
+  sentences: [
+    '時々食べる', "本を読む", '時々学ぶ', '山を視る',
+  '本を観る', '時々見る', '外に行く', '山から来る', '時々する',
+  'スミスさんに会う', '本を買う', '外に出る', '山に出る'
+  ],
+  translatedSentences: [
+  'I/We/He, she/They eat sometimes',
+  'I/We/He, she/They read a book',
+  'I/We/He, she/They learn sometimes',
+  'I/We/He, she/They see a mountain',
+  'I/We/He, she/They see a book',
+  'I/We/He, she/They see sometimes',
+  'I/We/He, she/They go outside',
+  'I/We/He, she/They come from the mountain',
+  'I/We/He, she/They sometimes do',
+  'I/We/He, she/They meet Mr. Smith',
+  'I/We/He, she/They buy a book',
+  'I/We/He, she/They are going outside',
+  'I/We/He, she/They are leaving the mountain'
+],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]}
+];
 
 app.get('/', function(req, res) {
   res.render('index');
@@ -69,9 +115,14 @@ app.get('/contact', function(req, res) {
 
 app.get('/lessons/:text', function(req, res) {
   res.render('lessons', {
-    chapter: lessonObject.chapter,
-    lesson: lessonObject.lesson,
-    list: lessonObject.list
+    pageNo: lessonObject[0].pageNumber,
+    chapter: lessonObject[0].chapter,
+    lesson: lessonObject[0].lesson,
+    list: lessonObject[0].charList,
+    speakers: lessonObject[0].speakers,
+    sentences: lessonObject[0].sentences,
+    translatedSentences: lessonObject[0].translatedSentences,
+    grammarPoints: lessonObject[0].grammarPoints
   })
 });
 

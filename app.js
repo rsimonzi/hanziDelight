@@ -55,7 +55,7 @@ let lessonObject = [{
   id: 2,
   pageNumber: '二 | 弐 | 2',
   chapter: "第一章 | だいいっしょう| Chapter 1",
-  lesson: "第二課 |　だい二か | Lesson 2",
+  lesson: "第二課 | だい二か | Lesson 2",
   charList: ['出', '時', '山', '本', '外'],
   speakers: ['ブラウン', 'スミス', 'ブラウン', 'スミス',
    'ブラウン', 'スミス', 'ブラウン', 'スミス',

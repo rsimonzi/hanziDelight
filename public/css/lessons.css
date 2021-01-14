@@ -12,7 +12,11 @@ form {
   margin-left: 375px;
 }
 
-h4 {
+a {
+  color: #898791;
+}
+
+.pageno {
   text-align: right;
   margin-right: 20px;
 }
@@ -25,13 +29,32 @@ table, th, td {
   font-size: 1.25rem;
 }
 
-h3, h1 {
+h3, h2, h1 {
   text-align: center;
 }
+
 p {
   padding-left: 20px;
 }
 
 .list {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  width: 23%;
+  background-color: #f1f1f1;
+  height: 90%;
+  /* Full height */
+  position: fixed;
+  /* Make it stick, even on scroll */
+  overflow: auto;
+  /* Enable scrolling if the sidenav has too much content */
+}
+
+li {
   text-align: center;
 }

@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {
 });
 
 const lessonsSchema = {
-  id: Number,
+  idNo: Number,
   pageNumber: String,
   chapter: String,
   lesson: String,
@@ -29,7 +29,7 @@ const lessonsSchema = {
 const Lesson = mongoose.model("Lesson", lessonsSchema);
 
 const lesson1 = new Lesson({
-  id: 1,
+  idNo: 1,
   pageNumber: '第一页 | dìyīyè | Page 1',
   chapter: "第一章 | dìyīzhāng | Chapter 1",
   lesson: "第一课 | dìyīkè | Lesson 1",
@@ -61,7 +61,7 @@ const lesson1 = new Lesson({
 });
 
 const lesson2 = new Lesson ({
-  id: 2,
+  idNo: 2,
   pageNumber: '二 | 弐 | 2',
   chapter: "第一章 | だいいっしょう| Chapter 1",
   lesson: "第二課 | だい二か | Lesson 2",

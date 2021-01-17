@@ -60,6 +60,7 @@ app.get('/lessons/:requestedIdNo', function(req, res){
         console.log('No Lesson Found');
       } else {
         res.render('lessons', {
+          idNo: foundLesson.idNo,
           pageNo: foundLesson.pageNumber,
           chapter: foundLesson.chapter,
           lesson: foundLesson.lesson,

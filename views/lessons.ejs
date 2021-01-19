@@ -1,68 +1,15 @@
 <%- include('header') -%>
 
 <br />
+<% const numOfDocs = 7; %>
 <ul class='toc'>
   <h2>Table of Contents</h2>
+  <%  for (let i = 0; i < numOfDocs; i++) {  %>
   <li>
-    <h4><a href="/lessons/1">Lesson <%= idNo %></a></h4>
+    <h4><a href="/lessons/<%= i + 1 %>">Lesson <%= i + 1 %></a></h4>
   </li>
-  <li>
-    <h4><a href="/lessons/2">Lesson <%= idNo %></a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/3">Lesson 3</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/4">Lesson 4</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/5">Lesson 5</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/6">Lesson 6</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/7">Lesson 7</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/8">Lesson 8</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/9">Lesson 9</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/10">Lesson 10</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/11">Lesson 11</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/12">Lesson 12</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/13">Lesson 13</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/14">Lesson 14</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/15">Lesson 15</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/16">Lesson 16</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/17">Lesson 17</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/18">Lesson 18</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/19">Lesson 19</a></h4>
-  </li>
-  <li>
-    <h4><a href="/lessons/20">Lesson 20</a></h4>
-  </li>
+  <% } %>
+
 </ul>
 
 <h4 class="pageno"><%= pageNo %></h4>

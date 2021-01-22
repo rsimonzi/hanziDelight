@@ -193,7 +193,57 @@ grammarPoints: [
 ]
 });
 
-const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5];
+const lesson6 = new Lesson({
+idNo: 6,
+pageNumber: '第六页 | dìliùyè | Page 6',
+chapter: "第一章 | dìyīzhāng | Chapter 1",
+lesson: "第六课 | dìliùkè | Lesson 6",
+charList: ['谢', '南', '今', '上', '多'],
+speakers: ['也先生 ', '习太太', '也先生', '习太太 ',
+'也先生 ', '习太太', '习太太', '也先生', '习太太', '习太太', '也先生', '习太太', '也先生'],
+sentences: ['你好习太太。 ', "你好也先生。", '我上午去南京。 ', '南京有很多人。 ', '你住在南京吗。 ',
+'我不住在南京。', '我住在东京。 ', ' 我今天去北京。', '你常常去北京吗。 ', '我不常去北京。', '在北京有很多人。', '再见。', '谢谢。再见。'],
+translatedSentences: ['Hello Mrs. Xi', 'Hello Mr. Ye', 'I go to Nanjing in the morning',
+'Nanjing has a lot of people', 'Do you live in Nanjing', 'I don’t live in Nanjing.',
+'I live in Tokyo.', 'I am going to Beijing today.', 'Do you go to Beijing often?', 'I don’t often go to Beijing',
+'There are a lot of people in Beijing', 'Goodbye.', 'Thank you. Goodbye'],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
+
+const lesson7 = new Lesson({
+idNo: 7,
+pageNumber: '第七页 | dìqīyè  | Page 7',
+chapter: "第一章 | dìyīzhāng | Chapter 1",
+lesson: "第七课 | dìqīkè | Lesson 7",
+charList: ['早', '了 ', '广', '没', '那'],
+speakers: ['国先生 ', '习太太', '国先生', '习太太 ',
+'国先生 ', '习太太', '国先生 ', '习太太', '习太太', '国先生', '习太太', '国先生', '习太太'],
+sentences: ['你好习太太。 ', "你好国先生。", '你去了南京吗。 ',
+'没去。我去了北京。 ',
+'那是常先生吗', '是。常先生去了东京。', '你在北京大学工作吗。 ',
+ '我在中学工作。', '你去了南京吗。 ', '没去。我没有钱。', '我早上去广东。 ', '再见。',' 再见。'],
+translatedSentences: ['Hello Mrs. Xi.', 'Hello Mr. Guo.', 'Did you go to Nanjing?',
+'No. I went to Beijing.',  'Is that Mr. Chang?','Yes, Mr. Chang went to Tokyo.',
+'Do you work at Nanjing University?', 'I work at a middle school.',
+'Did you go to Nanjing?', 'No, I don’t have any money.',
+'I am going to Guangdong in the morning.', 'Goodbye.', 'Goodbye.'],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
+
+
+const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7];
 
 Lesson.insertMany(defaultLessons, function(err){
 if(err) {

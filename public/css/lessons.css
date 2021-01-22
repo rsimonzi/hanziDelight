@@ -27,7 +27,8 @@ table, th, td {
   text-align: left;
   margin: auto;
   font-size: 1.25rem;
-}
+  margin-right: -5%;
+  }
 
 h3, h2, h1 {
   text-align: center;

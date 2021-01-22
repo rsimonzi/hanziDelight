@@ -242,8 +242,79 @@ grammarPoints: [
 ]
 });
 
+const lesson8 = new Lesson({
+idNo: 8,
+pageNumber: '第八页 | dìbāyè | Page 8',
+chapter: "第一章 | dìyīzhāng | Chapter 1",
+lesson: "第八课 | dìbākè | Lesson 8",
+charList: ['书', '晚 ', '海', '路', '他'],
+speakers: ['谢先生 ', '也太太', '谢先生', '也太太 ',
+'谢先生 ', '也太太', '谢先生 ', '也太太', '谢先生', '也太太', '谢先生', '也太太', '谢先生'],
+sentences: ['你好也太太。 ', "你好谢先生。", '你有书吗。 ',
+'我没有书。 ', '那是东先生吗', '是。他是大学生在南京大学。', '他住南京路吗。 ',
+ '南京路在上海。', '我晚上去上海。 ', '你在上海工作吗。', '我在海南工作。 ', '再见。',' 再见。'],
+translatedSentences: ['Hello Mrs. Ye.', 'Hello Mr. Xie.', 'Do you have a book?',
+'I don’t have any books.', 'Is that Mr. Dong?', 'Yes, he is a student at Nanjing University.',
+'Does he live on Nanjing road?', 'Nanjing road is in Shanghai.',
+'I am going to Shanghai in the evening.', 'Do you work in Shanghai?', 'I work in Hainan.',  'Goodbye.', 'Goodbye.'],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
 
-const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7];
+const lesson9 = new Lesson({
+idNo: 9,
+pageNumber: '第九页 | dìjiǔyè | Page 9',
+chapter: "第一章 | dìyīzhāng | Chapter 1",
+lesson: "第九课 | dìjiǔkè | Lesson 9",
+charList: ['买', '下 ', '州', '公', '西'],
+speakers: ['路先生 ', '也太太', '路先生', '也太太 ',
+'路先生 ', '也太太', '也太太 ', '路先生', '也太太', '路先生', '也太太'],
+sentences: ['早上好也太太。 ', '早上好路先生。','我今天下午去广州 。 ',
+'你买东西吗。 ', '我买书。', '我今天晚上也买东西。', '我明天上午去广西。 ',
+ '你在公路去吗。', '是。广州有很大公路。 ', '明天见。', '明天见。 '],
+translatedSentences: ['Good morning, Mrs. Xi.', 'Good morning, Mr. Lu.', 'This afternoon I am going to Guangzhou.', 'Are you shopping?', 'I am buying books.', 'I am also shopping this evening.',
+'Tomorrow morning, I am going to Guangxi.', 'Are you going on the highway?',
+'Yes, Guangzhou has a very large highway.', 'See you tomorrow.', 'See you tomorrow.'],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
+
+const lesson10 = new Lesson({
+idNo: 10,
+pageNumber: '第九页 | dìjiǔyè | Page 10',
+chapter: "第一章 | dìyīzhāng | Chapter 1",
+lesson: "第九课 | dìjiǔkè | Lesson 10",
+charList: ['要', '岛 ', '她', '等', '冬'],
+speakers: ['路先生', '也太太', '路先生', '路先生 ',
+'也太太 ', '路先生', '也太太 ',
+'路先生', '路先生', '也太太',
+'路先生','也太太'],
+sentences: ['早上好也太太。 ', '早上好路先生。', '我等你。', '我要去海南岛。 ',
+'我冬天去了海南岛。 ', '我要买东西。', '你买书码。', '是，我要买书。 ',
+ '你也要买书吗。', '不要。谢谢。 ', '再见。', '再见。 '],
+translatedSentences: ['Good morning, Mrs. Ye.', 'Hello, Mr. Lu.', 'I am waiting for you.', 'I want to go to Hainan Island.', 'I went to Hainan island in the winter.', 'I plan to shop. ', 'Are you buying books?',
+'Yes, I plan to buy books.', 'Do you want to buy books too?', 'Thank you – I don’t want to buy books.', 'Goodbye.', 'Goodbye.'],
+
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
+
+const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10];
 
 Lesson.insertMany(defaultLessons, function(err){
 if(err) {

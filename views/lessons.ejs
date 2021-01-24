@@ -4,6 +4,7 @@
 <% const numOfDocs = 10; %>
 <ul class='toc'>
   <h2>Table of Contents</h2>
+  <h2><button type="button" class='toc'><i class="fas fa-caret-square-left"></i></button></h2>
   <%  for (let i = 0; i < numOfDocs; i++) {  %>
   <li>
     <h4><a href="/lessons/<%= i + 1 %>">Lesson <%= i + 1 %></a></h4>

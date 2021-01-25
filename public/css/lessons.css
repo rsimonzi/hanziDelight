@@ -30,6 +30,22 @@ table, th, td {
   margin-right: -5%;
   }
 
+  .borders {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #898791;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  table-layout: fixed;
+  margin-right: 3%;
+}
+
+.sound-button {
+  color: #898791;
+}
+
 h3, h2, h1 {
   text-align: center;
 }
@@ -51,7 +67,7 @@ ul {
   list-style-type: none;
   margin: auto;
   padding: 0;
-  width: 23%;
+  width: 14%;
   background-color: #f1f1f1;
   height: 90%;
   /* Full height */

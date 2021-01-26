@@ -47,26 +47,22 @@
 <br />
 <table class="borders" style="width:80%">
   <tr class="borders">
-    <th class="borders">动词 | dòngcí | verbs</th>
+    <th class="borders">词 | cí | word</th>
     <th class="borders">拼音 | pīnyīn | pinyin </th>
     <th class="borders">含义 | hányì | meaning</th>
+    <th class="borders">词性 | cíxìng | part of speech</th>
     <th class="borders">发音 | fāyīn | pronunciation</th>
   </tr>
-  <tr class="borders">
-    <td class="borders">Jill</td>
-    <td class="borders">Smith</td>
-    <td class="borders">50</td>
-    <td class="borders"><button class="sound-button" type="button"><i class="fas fa-volume-off"></i></button>
-    </td>
-  </tr>
-  <tr class="borders">
-    <td class="borders">Eve</td>
-    <td class="borders">Jackson</td>
-    <td class="borders">94</td>
-    <td class="borders">
-      <button class="sound-button" type="button"><i class="fas fa-volume-off"></i></button>
-    </td>
-  </tr>
+  <%  for (let i = 0; i < word.length; i++) { %>
+    <tr class="borders">
+      <td class="borders"><%= word[i]  %></td>
+      <td class="borders"><%= pinyin[i] %></td>
+      <td class="borders"><%= meaning[i] %></td>
+      <td class="borders"><%= partOfSpeech[i] %></td>
+      <td class="borders"><%= pronunciation[i] %></td>
+    </tr>
+  <%  } %>
+
 </table>
 
 <br />

@@ -35,6 +35,7 @@
   <tr>
     <td><%= speakers[i] + ' ' + ':' + ' ' + ' ' %></td>
     <td><%= sentences[i] + ' ' + ' ' %></td>
+    <td><%= traditionalSentences[i] + ' ' + ' ' %></td>
     <td><%= translatedSentences[i] %></td>
   </tr>
   <% } %>
@@ -67,8 +68,15 @@
 
 <br />
 <br />
-<% for (let i = 0; i < grammarPoints.length; i++){ %>
-<p><%= grammarPoints[i]  %></p>
-<% } %>
+
+<table class='no-borders' style="width:90%">
+    <tr>
+    </tr>
+    <% for (let i = 0; i < grammarPoints.length; i++){ %>
+    <tr>
+      <td><%= grammarPoints[i] + ' ' + ' ' + ' ' %></td>
+    </tr>
+    <% } %>
+  </table>
 
 <%- include('footer') -%>

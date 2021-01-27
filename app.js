@@ -22,6 +22,7 @@ const lessonsSchema = {
   charList: [String],
   speakers: [String],
   sentences: [String],
+  traditionalSentences: [String],
   translatedSentences: [String],
   grammarPoints: [String],
   word: [String],
@@ -45,8 +46,8 @@ const lesson1 = new Lesson({
     '你好京太太', '我有钱。我去北京', '你在东京吗', '我在北京', '我有钱', '我去东京'
   ],
   traditionalSentences: [
-    '你好!', "你好!", '我是东先生', '我是京太太', '你好东先生',
-    '你好京太太', '我有钱。我去北京', '你在东京吗', '我在北京', '我有钱', '我去东京'
+    '你好!', "你好!", '我是東先生', '我是京太太', '你好東先生',
+    '你好京太太', '我有錢。我去北京', '你在東京嗎', '我在北京', '我有錢', '我去東京'
   ],
   translatedSentences: [
     'Hello!',
@@ -62,12 +63,14 @@ const lesson1 = new Lesson({
     'I am going to Tokyo.'
   ],
   grammarPoints: [
-    '',
-    '',
-    '',
-    '',
-    ''
-  ],
+    'In modern Japanese, there are 3 types of verbs – group 1, group 2 and group 3',
+    'Group 3 contains only two verbs, する and 来る.',
+    'する is called a サ行変格動詞 S row irregular verb.',
+    'くる　is called a カ行変格動詞 K row irregular verb.',
+    'Since these two verbs are irregular, you need to memorize each conjugation.',
+    'Group 2 verbs 上一段動詞 Kami ichidan verbs are verbs that end in いる or える',
+    'Group 1 verbs are all verbs not in Group 2 or Group 3 – they are called 五段動詞　Godan verbs.'
+    ],
   word: ['食べる', '行く'],
   pinyin: ['たべる', 'いく'],
   meaning: ['to eat', 'to go'],
@@ -399,6 +402,7 @@ app.get('/lessons/:requestedIdNo', function(req, res) {
           list: foundLesson.charList,
           speakers: foundLesson.speakers,
           sentences: foundLesson.sentences,
+          traditionalSentences: foundLesson.traditionalSentences,
           translatedSentences: foundLesson.translatedSentences,
           grammarPoints: foundLesson.grammarPoints,
           word: foundLesson.word,

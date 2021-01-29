@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const path = require('path');
 const _ = require('lodash');
+const encyrpt = require('mongoose-encryption');
 
 const app = express();
 
@@ -14,7 +15,15 @@ mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {
   useNewUrlParser: true
 });
 
-const lessonsSchema = {
+const usersSchema = new mongoose.Schema({
+  username: String,
+  password: String
+});
+
+const secret = "Thisisourlittlesecret";
+usersSchema.plugin(encrypt, {secret: secret, encryptedFields: ['password']});
+
+const lessonsSchema = new mongoose.Schema({
   idNo: Number,
   pageNumber: String,
   chapter: String,
@@ -30,7 +39,7 @@ const lessonsSchema = {
   meaning: [String],
   partOfSpeech: [String],
   pronunciation: [String]
-}
+});
 
 const Lesson = mongoose.model("Lesson", lessonsSchema);
 

@@ -4,24 +4,22 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const path = require('path');
 const _ = require('lodash');
-const encyrpt = require('mongoose-encryption');
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {
-  useNewUrlParser: true
-});
+var conn3 = mongoose.createConnection('mongodb://localhost:27017/userDB', {useNewUrlParser: true});
+var conn4 = mongoose.createConnection('mongodb://localhost:27017/hanziDelightDB', {useNewUrlParser: true});
 
+//mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {
+//  useNewUrlParser: true
+//});
 const usersSchema = new mongoose.Schema({
   username: String,
   password: String
 });
-
-const secret = "Thisisourlittlesecret";
-usersSchema.plugin(encrypt, {secret: secret, encryptedFields: ['password']});
 
 const lessonsSchema = new mongoose.Schema({
   idNo: Number,
@@ -38,10 +36,14 @@ const lessonsSchema = new mongoose.Schema({
   pinyin: [String],
   meaning: [String],
   partOfSpeech: [String],
-  pronunciation: [String]
+  pronunciation: [String],
+  exercises: [String]
 });
 
-const Lesson = mongoose.model("Lesson", lessonsSchema);
+const User = conn3.model('User', usersSchema);
+const Lesson = conn4.model('Lesson', lessonsSchema);
+
+//const Lesson = mongoose.model("Lesson", lessonsSchema);
 
 const lesson1 = new Lesson({
   idNo: 1,
@@ -84,7 +86,8 @@ const lesson1 = new Lesson({
   pinyin: ['たべる', 'いく'],
   meaning: ['to eat', 'to go'],
   partOfSpeech: ['動詞 | どうし | verb', '動詞 | どうし | verb'],
-  pronunciation: ['taberu.mp3', 'iku.mp3']
+  pronunciation: ['taberu.mp3', 'iku.mp3'],
+  exercises: []
 });
 
 const lesson2 = new Lesson({
@@ -418,7 +421,8 @@ app.get('/lessons/:requestedIdNo', function(req, res) {
           pinyin: foundLesson.pinyin,
           meaning: foundLesson.meaning,
           partOfSpeech: foundLesson.partOfSpeech,
-          pronunciation: foundLesson.pronunciation
+          pronunciation: foundLesson.pronunciation,
+          exercises: foundLessons.exercises
         });
       }
     }

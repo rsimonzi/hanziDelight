@@ -76,8 +76,21 @@
     <% for (let i = 0; i < grammarPoints.length; i++){ %>
     <tr>
       <td><%= grammarPoints[i] + ' ' + ' ' + ' ' %></td>
-    </tr>
+
     <% } %>
   </table>
+
+  <br />
+  <h3> 演习 | yǎnxí | Exercises</h3>
+  <<br>
+  <table class='no-borders' style="width:88%">
+      <tr>
+      </tr>
+      <% for (let i = 0; i < exercises.length; i++){ %>
+      <tr>
+        <td><%= exercises[i] + ' ' + ' ' + ' ' %></td>
+      </tr>
+      <% } %>
+    </table>
 
 <%- include('footer') -%>

@@ -59,7 +59,7 @@ p {
 }
 
 .toc {
-  border-style: none;
+  border-style: solid 1px;
   color: #898791;
 }
 

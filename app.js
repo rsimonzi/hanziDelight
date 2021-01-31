@@ -10,18 +10,16 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
-var conn3 = mongoose.createConnection('mongodb://localhost:27017/userDB', {useNewUrlParser: true});
-var conn4 = mongoose.createConnection('mongodb://localhost:27017/hanziDelightDB', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {
+ useNewUrlParser: true
+});
 
-//mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {
-//  useNewUrlParser: true
-//});
 const usersSchema = new mongoose.Schema({
   username: String,
   password: String
 });
 
-const lessonsSchema = new mongoose.Schema({
+const lessonsSchema = new mongoose.model({
   idNo: Number,
   pageNumber: String,
   chapter: String,
@@ -40,10 +38,8 @@ const lessonsSchema = new mongoose.Schema({
   exercises: [String]
 });
 
-const User = conn3.model('User', usersSchema);
-const Lesson = conn4.model('Lesson', lessonsSchema);
-
-//const Lesson = mongoose.model("Lesson", lessonsSchema);
+//const User = conn3.model('User', usersSchema);
+const Lesson = mongoose.model("Lesson", lessonsSchema);
 
 const lesson1 = new Lesson({
   idNo: 1,

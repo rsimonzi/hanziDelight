@@ -10,16 +10,11 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost: 27017/hanziDelightDB', {
+mongoose.connect('mongodb://localhost:27017/hanziDelightDB', {
  useNewUrlParser: true
 });
 
-const usersSchema = new mongoose.Schema({
-  username: String,
-  password: String
-});
-
-const lessonsSchema = new mongoose.model({
+const lessonsSchema = new mongoose.Schema({
   idNo: Number,
   pageNumber: String,
   chapter: String,
@@ -359,7 +354,7 @@ const lesson10 = new Lesson({
   ]
 });
 
-const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10];
+const defaultLessons = [lesson1];
 
 Lesson.insertMany(defaultLessons, function(err) {
   if (err) {
@@ -418,7 +413,7 @@ app.get('/lessons/:requestedIdNo', function(req, res) {
           meaning: foundLesson.meaning,
           partOfSpeech: foundLesson.partOfSpeech,
           pronunciation: foundLesson.pronunciation,
-          exercises: foundLessons.exercises
+          exercises: foundLesson.exercises
         });
       }
     }

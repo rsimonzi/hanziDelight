@@ -28,9 +28,9 @@ table, th, td {
   margin: auto;
   font-size: 1.25rem;
   margin-right: -5%;
-  }
+}
 
-  .borders {
+.borders {
   border-style: solid;
   border-width: 2px;
   border-color: #898791;
@@ -59,7 +59,7 @@ p {
 }
 
 .toc {
-  border-style: solid 1px;
+  border-style: solid;
   color: #898791;
 }
 

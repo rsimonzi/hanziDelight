@@ -20,9 +20,9 @@
 <h3><%= lesson %></h3>
 
 <% let x = " " %>
-<% for (let i = 0; i < list.length; i++){ %>
-<%  x += " " + list[i] + " "  %>
-<% } %>
+<% list.forEach(function(listie){   %>
+<%  x += " " + listie + " "  %>
+<% }) %>
 <h3><%= x %></h3>
 
 <br />
@@ -42,7 +42,7 @@
 </table>
 
 <br />
-<br  />
+<br />
 <h3>词汇 | cíhuì | Vocabulary</h3>
 <br />
 <br />
@@ -55,13 +55,13 @@
     <th class="borders">发音 | fāyīn | pronunciation</th>
   </tr>
   <%  for (let i = 0; i < word.length; i++) { %>
-    <tr class="borders">
-      <td class="borders"><%= word[i]  %></td>
-      <td class="borders"><%= pinyin[i] %></td>
-      <td class="borders"><%= meaning[i] %></td>
-      <td class="borders"><%= partOfSpeech[i] %></td>
-      <td class="borders"><%= pronunciation[i] %></td>
-    </tr>
+  <tr class="borders">
+    <td class="borders"><%= word[i]  %></td>
+    <td class="borders"><%= pinyin[i] %></td>
+    <td class="borders"><%= meaning[i] %></td>
+    <td class="borders"><%= partOfSpeech[i] %></td>
+    <td class="borders"><%= pronunciation[i] %></td>
+  </tr>
   <%  } %>
 
 </table>
@@ -70,27 +70,26 @@
 <br />
 <h3> 语法 | yǔfǎ | Grammar</h3>
 <<br>
-<table class='no-borders' style="width:88%">
+  <table class='no-borders' style="width:88%">
     <tr>
     </tr>
-    <% for (let i = 0; i < grammarPoints.length; i++){ %>
+    <% grammarPoints.forEach(function(grammarPoint) { %>
     <tr>
-      <td><%= grammarPoints[i] + ' ' + ' ' + ' ' %></td>
-
-    <% } %>
+      <td><%= grammarPoint + ' ' + ' ' + ' ' %></td>
+      <% }) %>
   </table>
 
   <br />
   <h3> 演习 | yǎnxí | Exercises</h3>
   <<br>
-  <table class='no-borders' style="width:88%">
+    <table class='no-borders' style="width:88%">
       <tr>
       </tr>
-      <% for (let i = 0; i < exercises.length; i++){ %>
+      <% exercises.forEach(function(exercise) { %>
       <tr>
-        <td><%= exercises[i] + ' ' + ' ' + ' ' %></td>
+        <td><%= exercise + ' ' + ' ' + ' ' %></td>
       </tr>
-      <% } %>
+      <% }) %>
     </table>
 
-<%- include('footer') -%>
+    <%- include('footer') -%>

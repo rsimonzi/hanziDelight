@@ -380,6 +380,10 @@ app.get('/signup', function(req, res) {
   res.render('signup');
 });
 
+app.get('/tategaki', function(req, res){
+  res.render('tategaki');
+});
+
 app.get('/about', function(req, res) {
   res.render('about');
 });

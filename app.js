@@ -33,7 +33,6 @@ const lessonsSchema = new mongoose.Schema({
   exercises: [String]
 });
 
-//const User = conn3.model('User', usersSchema);
 const Lesson = mongoose.model("Lesson", lessonsSchema);
 
 const lesson1 = new Lesson({
@@ -354,7 +353,7 @@ const lesson10 = new Lesson({
   ]
 });
 
-const defaultLessons = [lesson1];
+const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10];
 
 Lesson.insertMany(defaultLessons, function(err) {
   if (err) {

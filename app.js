@@ -291,7 +291,7 @@ const lesson8 = new Lesson({
     'I am going to Shanghai in the evening.', 'Do you work in Shanghai?', 'I work in Hainan.', 'Goodbye.', 'Goodbye.'
   ],
   grammarPoints: [
-    '',
+    'Generally, if you are speaking about where something is done, i.e. working, use zai after the personal pronoun',
     '',
     '',
     '',

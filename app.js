@@ -64,13 +64,9 @@ const lesson1 = new Lesson({
     'I am going to Tokyo.'
   ],
   grammarPoints: [
-    'In modern Japanese, there are 3 types of verbs – group 1, group 2 and group 3',
-    'Group 3 contains only two verbs, する and 来る.',
-    'する is called a サ行変格動詞 S row irregular verb.',
-    'くる　is called a カ行変格動詞 K row irregular verb.',
-    'Since these two verbs are irregular, you need to memorize each conjugation.',
-    'Group 2 verbs 上一段動詞 Kami ichidan verbs are verbs that end in いる or える',
-    'Group 1 verbs are all verbs not in Group 2 or Group 3 – they are called 五段動詞　Godan verbs.'
+    'There are two forms of Chinese characters - simplified characters and traditional characters',
+    'Taiwan, Hong Kong and Macau use traditional characters.',
+    'China, Malaysia and Singapore use simplified characters in official publications'
     ],
   word: ['食べる', '行く'],
   pinyin: ['たべる', 'いく'],

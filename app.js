@@ -102,8 +102,8 @@ const lesson2 = new Lesson({
     'I go to Tokyo daily'
   ],
   grammarPoints: [
-    '',
-    '',
+    'Chinese surnames are often but not always consist of one character.',
+    'Chinese given names are often two characters.',
     '',
     '',
     ''

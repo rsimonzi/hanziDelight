@@ -136,8 +136,8 @@ const lesson3 = new Lesson({
     'I am going to Tokyo tomorrow'
   ],
   grammarPoints: [
-    '',
-    '',
+    'The word 不 is used to negate every verb except for 有',
+    'Generally, time phrases directly follow the subject but can also be placed at the end of the sentence',
     '',
     '',
     ''

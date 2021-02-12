@@ -170,7 +170,7 @@ const lesson4 = new Lesson({
     'See you tomorrow.'
   ],
   grammarPoints: [
-    '',
+    '在 indicates where an action is taking place.',
     '',
     '',
     '',

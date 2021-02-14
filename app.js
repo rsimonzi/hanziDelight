@@ -380,7 +380,7 @@ const lesson6 = new Lesson({
     "Goodbye.",
     "Thank you. Goodbye",
   ],
-  grammarPoints: ["", "", "", "", ""],
+  grammarPoints: ["To negate the verb 有, you use 没有", "", "", "", ""],
 });
 
 const lesson7 = new Lesson({

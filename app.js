@@ -434,7 +434,13 @@ const lesson7 = new Lesson({
     "Goodbye.",
     "Goodbye.",
   ],
-  grammarPoints: ["", "", "", "", ""],
+  grammarPoints: [
+    "了 is a particle used to indicate an action that happened in the past",
+    "",
+    "",
+    "",
+    "",
+  ],
 });
 
 const lesson8 = new Lesson({

@@ -548,7 +548,13 @@ const lesson9 = new Lesson({
     "See you tomorrow.",
     "See you tomorrow.",
   ],
-  grammarPoints: ["", "", "", "", ""],
+  grammarPoints: [
+    "You do not need to use a counter unless you are referring to a specific number of items",
+    "",
+    "",
+    "",
+    "",
+  ],
 });
 
 const lesson10 = new Lesson({

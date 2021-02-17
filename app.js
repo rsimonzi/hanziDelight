@@ -606,7 +606,7 @@ const lesson10 = new Lesson({
     "Goodbye.",
   ],
 
-  grammarPoints: ["", "", "", "", ""],
+  grammarPoints: ["是 is used as yes, 不是 is used as no", "", "", "", ""],
 });
 
 const defaultLessons = [

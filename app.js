@@ -606,7 +606,13 @@ const lesson10 = new Lesson({
     "Goodbye.",
   ],
 
-  grammarPoints: ["是 is used as yes, 不是 is used as no", "", "", "", ""],
+  grammarPoints: [
+    "是 is used as yes, 不是 is used as no",
+    "不要 is okay to say when you don't want something",
+    "",
+    "",
+    "",
+  ],
 });
 
 const defaultLessons = [

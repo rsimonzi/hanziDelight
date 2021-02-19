@@ -609,7 +609,7 @@ const lesson10 = new Lesson({
   grammarPoints: [
     "是 is used as yes, 不是 is used as no",
     "不要 is okay to say when you don't want something",
-    "",
+    "要 + verb means that you intend to do something",
     "",
     "",
   ],

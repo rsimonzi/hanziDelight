@@ -167,7 +167,7 @@ const lesson2 = new Lesson({
   grammarPoints: [
     "Chinese surnames are often but not always consist of one character.",
     "Chinese given names are often two characters.",
-    "",
+    "To say that you have not done something yet, use 没 + verb",
     "",
     "",
   ],

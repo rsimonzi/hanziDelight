@@ -218,7 +218,7 @@ const lesson3 = new Lesson({
   grammarPoints: [
     "The word 不 is used to negate every verb except for 有",
     "Generally, time phrases directly follow the subject but can also be placed at the end of the sentence",
-    "",
+    "To say in a place such as in Beijing, use 在北京",
     "",
     "",
   ],

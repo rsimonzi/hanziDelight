@@ -168,7 +168,7 @@ const lesson2 = new Lesson({
     "Chinese surnames are often but not always consist of one character.",
     "Chinese given names are often two characters.",
     "To say that you have not done something yet, use 没 + verb",
-    "",
+    "You can use 有 to say 'There are' ",
     "",
   ],
 });

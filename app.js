@@ -269,7 +269,7 @@ const lesson4 = new Lesson({
   grammarPoints: [
     "在 indicates where an action is taking place.",
     "The tone mark appears above the vowel if there is only one vowel in the syllable",
-    "",
+    "If there are two vowels in the syllable, the tone mark is applied to the first vowel, unless the first vowel is i or u",
     "",
     "",
   ],

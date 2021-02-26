@@ -271,7 +271,7 @@ const lesson4 = new Lesson({
     "The tone mark appears above the vowel if there is only one vowel in the syllable",
     "If there are two vowels in the syllable, the tone mark is applied to the first vowel, unless the first vowel is i or u",
     "Not all words have a tone but all stressed words have a tone associated with them",
-    "",
+    "If there are two tone 3 words, the first tone 3 word changes to a tone 2",
   ],
 });
 

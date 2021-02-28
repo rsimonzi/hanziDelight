@@ -323,7 +323,7 @@ const lesson5 = new Lesson({
   grammarPoints: [
     "好 must not be used with 是。",
     "You cannot say 我好, you must use a modifier such as 很 with 好。",
-    "",
+    "Some verbs such as 学 require an object",
     "",
     "",
   ],

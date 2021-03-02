@@ -325,7 +325,7 @@ const lesson5 = new Lesson({
     "You cannot say 我好, you must use a modifier such as 很 with 好。",
     "Some verbs such as 学 require an object",
     "There are no words for a or the in Mandarin",
-    "",
+    "The generic counter is 个",
   ],
 });
 

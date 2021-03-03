@@ -380,7 +380,8 @@ const lesson6 = new Lesson({
     "Goodbye.",
     "Thank you. Goodbye",
   ],
-  grammarPoints: ["To negate the verb 有, you use 没有", "", "", "", ""],
+    grammarPoints: ["To negate the verb 有, you use 没有",
+        "没 is used to say you haven't done something", "", "", ""],
 });
 
 const lesson7 = new Lesson({

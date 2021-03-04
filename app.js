@@ -381,7 +381,7 @@ const lesson6 = new Lesson({
     "Thank you. Goodbye",
   ],
     grammarPoints: ["To negate the verb 有, you use 没有",
-        "没 is used to say you haven't done something", "", "", ""],
+        "没 is used to say you haven't done something", "您 is the polite form for 你", "", ""],
 });
 
 const lesson7 = new Lesson({

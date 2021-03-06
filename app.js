@@ -169,7 +169,7 @@ const lesson2 = new Lesson({
     "Chinese given names are often two characters.",
     "To say that you have not done something yet, use 没 + verb",
     "You can use 有 to say 'There are' ",
-    "",
+    "To say you have done something before, attach 过 to the verb",
   ],
 });
 

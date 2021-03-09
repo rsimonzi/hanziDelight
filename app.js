@@ -220,7 +220,7 @@ const lesson3 = new Lesson({
     "Generally, time phrases directly follow the subject but can also be placed at the end of the sentence",
     "To say in a place such as in Beijing, use 在北京",
     "To say that you plan or intend to do something, use 要 + verb",
-    "",
+    "To say that you would like to do something, use 想 + verb",
   ],
 });
 

@@ -439,7 +439,7 @@ const lesson7 = new Lesson({
     "了 is a particle used to indicate an action that happened in the past",
     "Japanese characters do not map exactly either to Simplified Chinese characters or traditinal characters.",
     "The particle 了 can be placed after the verb or at the end of the sentence",
-    "",
+    "喂 is the Chinese equivalent of hello when answering the phone",
     "",
   ],
 });
